@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    .text-preset-1 {
+        @apply font-redhatdisplay;
+        @apply font-black text-[40px] leading-[110%] tracking-[0px];
+    }
+
+    .text-preset-2 {
+        @apply font-redhatdisplay;
+        @apply font-black text-[32px] leading-[110%] tracking-[0px];
+    }
+
+    .text-preset-3 {
+        @apply font-redhatdisplay;
+        @apply font-black text-[12px] leading-[110%] tracking-[4px];
+    }
+
+    .text-preset-4 {
+        @apply font-redhatdisplay;
+    }
+
+    .text-preset-5 {
+        @apply font-redhatdisplay;
+        @apply font-black text-[16px] leading-[150%] tracking-[0px];
+    }
+
+    @screen tablet {
+        .text-preset-1 {
+            @apply text-[48px];
+        }
+
+        .text-preset-2 {
+            @apply text-[36px];
+        }
+
+        .text-preset-3 {
+            @apply text-[14px];
+        }
+
+        .text-preset-4 {
+            @apply font-medium text-[16px] leading-[150%] tracking-[0px];
+        }
+
+    }
+
+    @screen desktop {
+        .text-preset-1 {
+            @apply text-[64px];
+        }
+
+        .text-preset-2 {
+            @apply text-[40px];
+        }
+
+        .text-preset-3 {
+            @apply text-[16px];
+        }
+
+        .text-preset-4 {
+            @apply text-[18px];
+        }
+
+    }
+}
+
+@layer components{
+    .button-blue{
+        @apply bg-cyan-600 px-10 py-4 rounded-full text-white hover:bg-cyan-400 text-preset-5 w-fit;
+    }
+    .button-purple{
+        @apply bg-purple-600 px-10 py-4 rounded-full text-white hover:bg-purple-400 text-preset-5 w-fit;
+    }
+    .button-blue.button-download>.text-version{
+        @apply text-cyan-300;
+    }
+    .button-purple.button-download>.text-version{
+        @apply text-purple-300;
+    }
+
+    .component-number{
+        @apply flex flex-col items-center;
+        &>.number{
+            @apply text-preset-5 text-slate-600 border border-slate-300 rounded-full aspect-square flex justify-center items-center w-14;
+        }
+        &::before{
+            content:'';
+            @apply w-1 h-20 border-l border-slate-300;
+        }
+    }
+
+    .image-collage-group{
+        @apply flex flex-wrap gap-4 justify-center;
+        &>img{
+            @apply aspect-square h-36 rounded-lg;
+        }
+    }
+
+    .footer-hero{        
+        @apply relative;
+        // @apply bg-[url('/src/assets/mobile/image-footer.jpg')] bg-cover bg-opacity-30;
+        // @apply bg-cyan-300 bg-opacity-30;
+        &::before{
+            content:'';
+            @apply absolute top-0 left-0 w-full h-[320px];
+            @apply bg-[url('/src/assets/mobile/image-footer.jpg')] bg-cover;
+        }
+    }
+}

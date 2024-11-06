@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Meet landing page</title>
+</head>
+
+<body>
+  <div id="app" class="min-h-screen flex flex-col min-w-[320px]">
+    <header class="flex min-h-20 desktop:min-h-28 justify-center">
+      <!-- brand -->
+      <div class="self-center">
+        <img src="/src/assets/logo.svg" />
+      </div>
+    </header>
+    <main class="grow">
+      <!-- hero -->
+      <div class="p-8 pt-16 flex flex-col gap-12">
+        <div class="w-screen aspect-[27/10] -ml-8 bg-[url('/src/assets/mobile/image-hero.png')] bg-cover min-h-40">
+        </div>
+        <div class="flex flex-col gap-6 items-center">
+          <div class="text-slate-900 text-preset-1 text-center">Group Chat<br>
+            for Everyone</div>
+          <div class="text-slate-600 text-preset-4 text-center">Meet makes it easy to connect with others face-to-face
+            virtually and
+            collaborate across any device.</div>
+          <div class="flex flex-col gap-4 items-center">
+            <button class="button-blue button-download">Download <span class="text-version">v1.3</span></button>
+            <button class="button-purple">What is it?</button>
+          </div>
+        </div>
+      </div>
+      <!-- main-content -->
+      <div class="p-8 pb-16 flex flex-col gap-8">
+        <div class="component-number"><span class="number">01</span></div>
+        <div class="image-collage-group">
+          <img src="/src/assets/desktop/image-woman-in-videocall.jpg" />
+          <img src="/src/assets/desktop/image-women-videochatting.jpg" />
+          <img src="/src/assets/desktop/image-men-in-meeting.jpg" />
+          <img src="/src/assets/desktop/image-man-texting.jpg" />
+        </div>
+        <section class="flex flex-col gap-8 justify-center text-center">
+          <header class="flex flex-col gap-4 justify-center">
+            <span class="text-cyan-600 text-preset-3">Built for modern use</span>
+            <span class="text-slate-900 text-preset-2">Smarter meetings, all in one place</span>
+          </heasder>
+          <p class="text-preset-4 text-slate-600">Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who
+            can join with invite-only team access, data encryption, and data export.</p>
+          </section>
+      </div>
+    </main>
+    <footer>
+      <!-- footer -->
+      <div class="component-number"><span class="number">02</span></div>
+      <div class="px-8 py-16 gap-6 footer-hero flex flex-col items-center -mt-8">
+        <p class="text-preset-2 text-white text-center">Experience more together</p>
+        <p class="text-preset-4 text-white text-center">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+        <button class="button-purple button-download">Download <span class="text-version">v1.3</span></button>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
