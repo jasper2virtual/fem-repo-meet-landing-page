@@ -97,7 +97,10 @@
     .image-collage-group{
         @apply flex flex-wrap gap-4 justify-center;
         &>img{
-            @apply aspect-square h-36 rounded-lg;
+            @apply aspect-square rounded-lg
+            h-[144px]
+            tablet:h-[160px]
+            desktop:h-[256px];
         }
     }
 
