@@ -71,10 +71,10 @@
 
 @layer components{
     .button-blue{
-        @apply bg-cyan-600 px-10 py-4 rounded-full text-white hover:bg-cyan-400 text-preset-5 w-fit;
+        @apply bg-cyan-600 px-10 py-4 rounded-full text-white hover:bg-cyan-400 text-preset-5 w-fit flex gap-2;
     }
     .button-purple{
-        @apply bg-purple-600 px-10 py-4 rounded-full text-white hover:bg-purple-400 text-preset-5 w-fit;
+        @apply bg-purple-600 px-10 py-4 rounded-full text-white hover:bg-purple-400 text-preset-5 w-fit flex gap-2;
     }
     .button-blue.button-download>.text-version{
         @apply text-cyan-300;
@@ -101,14 +101,5 @@
         }
     }
 
-    .footer-hero{        
-        @apply relative;
-        // @apply bg-[url('/src/assets/mobile/image-footer.jpg')] bg-cover bg-opacity-30;
-        // @apply bg-cyan-300 bg-opacity-30;
-        &::before{
-            content:'';
-            @apply absolute top-0 left-0 w-full h-[320px];
-            @apply bg-[url('/src/assets/mobile/image-footer.jpg')] bg-cover;
-        }
-    }
+
 }

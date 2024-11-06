@@ -9,7 +9,7 @@ export default {
       screens:{
         mobile:'365px',
         tablet:'768px',
-        desktop:'1044px',
+        desktop:'1440px',
       },
       fontFamily:{
         'redhatdisplay':['Red Hat Display', 'sans-serif'],

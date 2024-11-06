@@ -20,20 +20,24 @@
     </header>
     <main class="grow">
       <!-- hero -->
-      <div class="p-8 pt-16 flex flex-col gap-12">
-        <div class="w-screen aspect-[27/10] -ml-8 bg-[url('/src/assets/mobile/image-hero.png')] bg-cover min-h-40">
-        </div>
-        <div class="flex flex-col gap-6 items-center">
+      <div class="p-8 pt-16 
+      flex flex-col gap-12 items-center
+      desktop:flex-row desktop:justify-center
+      ">
+        <img src="/src/assets/mobile/image-hero.png" alt="" class="max-w-[calc(100%+6rem)] desktop:hidden">
+        <img src="/src/assets/desktop/image-hero-left.png" alt="" class="hidden desktop:block self-start">
+        <div class="flex flex-col gap-6 items-center tablet:max-w-[450px]">
           <div class="text-slate-900 text-preset-1 text-center">Group Chat<br>
             for Everyone</div>
           <div class="text-slate-600 text-preset-4 text-center">Meet makes it easy to connect with others face-to-face
             virtually and
             collaborate across any device.</div>
           <div class="flex flex-col gap-4 items-center">
-            <button class="button-blue button-download">Download <span class="text-version">v1.3</span></button>
+            <button class="button-blue button-download">Download<span class="text-version">v1.3</span></button>
             <button class="button-purple">What is it?</button>
           </div>
         </div>
+        <img src="/src/assets/desktop/image-hero-right.png" alt="" class="hidden desktop:block self-end">
       </div>
       <!-- main-content -->
       <div class="p-8 pb-16 flex flex-col gap-8">
@@ -44,23 +48,36 @@
           <img src="/src/assets/desktop/image-men-in-meeting.jpg" />
           <img src="/src/assets/desktop/image-man-texting.jpg" />
         </div>
-        <section class="flex flex-col gap-8 justify-center text-center">
+        <section class="flex flex-col gap-8 justify-center text-center tablet:max-w-[505px] desktop:max-w-[544px] mx-auto">
           <header class="flex flex-col gap-4 justify-center">
             <span class="text-cyan-600 text-preset-3">Built for modern use</span>
             <span class="text-slate-900 text-preset-2">Smarter meetings, all in one place</span>
-          </heasder>
-          <p class="text-preset-4 text-slate-600">Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who
-            can join with invite-only team access, data encryption, and data export.</p>
-          </section>
+            </heasder>
+            <p class="text-preset-4 text-slate-600">Send messages, share files, show your screen, and record your
+              meetings — all in one workspace. Control who
+              can join with invite-only team access, data encryption, and data export.</p>
+        </section>
       </div>
     </main>
     <footer>
       <!-- footer -->
-      <div class="component-number"><span class="number">02</span></div>
-      <div class="px-8 py-16 gap-6 footer-hero flex flex-col items-center -mt-8">
-        <p class="text-preset-2 text-white text-center">Experience more together</p>
-        <p class="text-preset-4 text-white text-center">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-        <button class="button-purple button-download">Download <span class="text-version">v1.3</span></button>
+      <div class="component-number"><span class="number bg-white z-10">02</span></div>
+      <div class="grid grid-cols-1 grid-rows-1 -mt-8">
+        <div class="row-span-full col-span-full 
+        bg-[url('/src/assets/mobile/image-footer.jpg')] 
+        tablet:bg-[url('/src/assets/tablet/image-footer.jpg')] 
+        desktop:bg-[url('/src/assets/desktop/image-footer.jpg')]
+        bg-cover"></div>
+        <div class="row-span-full col-span-full bg-cyan-600 bg-opacity-90 px-8 py-16">
+<div class="flex flex-col desktop:flex-row items-center gap-6 tablet:max-w-[505px] desktop:max-w-[1120px] mx-auto">
+  
+            <p class="text-preset-2 text-white text-center desktop:text-left">Experience more together</p>
+            <p class="text-preset-4 text-white text-center desktop:text-left">Stay connected with reliable HD meetings and unlimited
+              one-on-one and group video sessions.</p>
+            <button class="button-purple button-download">Download<span class="text-version">v1.3</span></button>
+  
+</div>
+        </div>
       </div>
     </footer>
   </div>
